@@ -20,8 +20,13 @@
     box-sizing: border-box;
 }
 
-body {
+body , html {
     height: 100vh;
+    width: 100vw;
+}
+
+body {
+    overflow-x: hidden;
     font-size: 1rem;
     display: flex;
     align-items: center;
@@ -166,6 +171,30 @@ img:hover {
 .kimberly {
     justify-content: space-between;
 }
+
+@media screen and (max-width: 600px) {
+    body{
+        display: block;
+    }
+
+    main {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        font-size: .8rem;
+    }
+
+    main {
+        height: auto;
+    }
+}
+
+
+
+
 
 
 
